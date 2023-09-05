@@ -14,7 +14,7 @@ spec:
   source:
     path: mq/environments/prod/mq-spring-app/
     repoURL: https://github.com/sepe/multi-tenancy-gitops-apps.git
-    targetRevision: master
+    targetRevision: test
   syncPolicy:
     automated:
       prune: true

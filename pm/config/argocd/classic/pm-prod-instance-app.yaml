@@ -14,5 +14,5 @@ spec:
   source:
     path: pm/environments/classic
     repoURL: https://github.com/sepe/multi-tenancy-gitops-apps.git
-    targetRevision: master
+    targetRevision: test
   syncPolicy: {}

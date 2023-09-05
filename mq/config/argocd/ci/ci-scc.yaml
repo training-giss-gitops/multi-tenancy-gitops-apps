@@ -17,7 +17,7 @@ spec:
   source:
     path: mq/environments/ci/scc
     repoURL: https://github.com/sepe/multi-tenancy-gitops-apps.git
-    targetRevision: master
+    targetRevision: test
   syncPolicy:
     automated:
       prune: true
