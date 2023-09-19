@@ -3,8 +3,12 @@ kind: Kustomization
 resources:
 - ../../base
 
-# replicas:
-# - name: websphereliberty-app-sample
-#   count: 1
+patches:
+ - target:
+      group: liberty.websphere.ibm.com
+      version: v1
+      kind: WebSphereLibertyApplication
+      name: websphereliberty-app-sample
+   path: wsla.patch.yaml
 
-# namespace: dev
+namespace: dev

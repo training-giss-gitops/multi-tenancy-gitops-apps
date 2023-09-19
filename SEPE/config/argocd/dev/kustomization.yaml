@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ../../../apps/sample-app/overlays/dev
 - ../../../apps/sample-app-2/overlays/dev
-# - ../../../apps/websphereliberty-app-sample/overlays/dev
+- ../../../apps/websphereliberty-app-sample/overlays/dev
 
 patches:
   - path: add-license.patch.yaml
