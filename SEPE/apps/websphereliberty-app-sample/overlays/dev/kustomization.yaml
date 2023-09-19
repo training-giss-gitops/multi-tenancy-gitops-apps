@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
 - ../../base
 
-replicas:
-- name: websphereliberty-app-sample
-  count: 1
+# replicas:
+# - name: websphereliberty-app-sample
+#   count: 1
 
-namespace: dev
+# namespace: dev
