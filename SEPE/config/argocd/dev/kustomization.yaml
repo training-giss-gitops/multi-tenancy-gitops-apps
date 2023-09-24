@@ -8,3 +8,6 @@ patches:
   - path: add-license.patch.yaml
     target:
       labelSelector: "liberty=true"
+
+commonAnnotations:
+  configVersion: 1.0
