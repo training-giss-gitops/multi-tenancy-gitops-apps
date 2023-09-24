@@ -10,4 +10,4 @@ patches:
       labelSelector: "liberty=true"
 
 commonAnnotations:
-  configVersion: 1.0
+  configVersion: "1.0"
