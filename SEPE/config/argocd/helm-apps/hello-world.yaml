@@ -9,7 +9,7 @@ spec:
   source:
     chart: was-liberty-hello-world
     repoURL: https://jesusmah.github.io/helm-chart-repo
-    targetRevision: 1.0.0
+    targetRevision: 2.0.0
     helm:
       releaseName: hello-world-helm
       # values: |
