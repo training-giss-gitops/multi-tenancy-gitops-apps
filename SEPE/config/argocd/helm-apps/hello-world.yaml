@@ -9,11 +9,11 @@ spec:
   source:
     chart: was-liberty-hello-world
     repoURL: https://jesusmah.github.io/helm-chart-repo
-    targetRevision: 3.0.0
+    targetRevision: 4.0.0
     helm:
       releaseName: hello-world-helm
-      values: |
-        lastConfigLoaded: test
+      # values: |
+      #   lastConfigLoaded: test
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
