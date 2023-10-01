@@ -12,8 +12,8 @@ spec:
     targetRevision: 2.0.0
     helm:
       releaseName: hello-world-helm
-      # values: |
-      #   lastConfigLoaded: test
+      values: |
+        lastConfigLoaded: test
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
