@@ -1,21 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-helm-example
+  name: was-liberty-hello-world-helm
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: applications
   source:
-    chart: hello-world
-    repoURL: https://helm.github.io/examples
-    targetRevision: 0.1.0
+    chart: was-liberty-hello-world
+    repoURL: https://jesusmah.github.io/helm-chart-repo
+    targetRevision: 1.0.0
     helm:
       releaseName: hello-world-helm
-      values: |
-        image:
-          repository: icr.io/appcafe/open-liberty/samples/getting-started
-          tag: latest
+      # values: |
+      #   lastConfigLoaded: test
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
