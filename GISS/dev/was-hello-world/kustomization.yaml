@@ -5,23 +5,23 @@ resources:
 - ./argoApp.yaml
 
 patches:
+# - target:
+#     group: argoproj.io
+#     kind: Application
+#   patch: |-
+#     - op: add
+#       path: /spec/source/helm/values
+#       value: |
+#         inline1: aValueFromInLine1
+#         inline2: aValueFromInLine2
 - target:
     group: argoproj.io
     kind: Application
-  patch: |-
-    - op: add
-      path: /spec/source/helm/values
-      value:
-        inline1: aValueFromInLine1
-        inline2: aValueFromInLine2
-# - target:
-#     group: argoproj.io
-#     kind: Application
-#   path: values/enrichedValues.yaml
-# - target:
-#     group: argoproj.io
-#     kind: Application
-#   path: values/latestConfigLoaded.yaml
+  path: values/enrichedValues.yaml
+- target:
+    group: argoproj.io
+    kind: Application
+  path: values/latestConfigLoaded.yaml
 
 # commonAnnotations:
 #   configVersion: "2.0"
