@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: was-liberty-hello-world-helm
+spec:
+  source:
+    helm:
+      values:
+        lastConfigLoaded: valueFromFile

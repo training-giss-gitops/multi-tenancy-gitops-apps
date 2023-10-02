@@ -21,7 +21,7 @@ patches:
 - target:
     group: argoproj.io
     kind: Application
-  path: values/latestConfigLoaded.yaml
+  path: values/anotherValues.yaml
 
 # commonAnnotations:
 #   configVersion: "2.0"

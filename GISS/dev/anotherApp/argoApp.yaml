@@ -13,7 +13,7 @@ spec:
     helm:
       releaseName: hello-world-helm
       values: |
-        lastConfigLoaded: valueFromArgoApplication
+        lastConfigLoaded: valueFromApplication
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
