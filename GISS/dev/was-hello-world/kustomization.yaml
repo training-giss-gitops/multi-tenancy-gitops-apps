@@ -14,14 +14,14 @@ patches:
       value:
         inline1: aValueFromInLine1
         inline2: aValueFromInLine2
-- target:
-    group: argoproj.io
-    kind: Application
-  path: values/enrichedValues.yaml
-- target:
-    group: argoproj.io
-    kind: Application
-  path: values/latestConfigLoaded.yaml
+# - target:
+#     group: argoproj.io
+#     kind: Application
+#   path: values/enrichedValues.yaml
+# - target:
+#     group: argoproj.io
+#     kind: Application
+#   path: values/latestConfigLoaded.yaml
 
 # commonAnnotations:
 #   configVersion: "2.0"
