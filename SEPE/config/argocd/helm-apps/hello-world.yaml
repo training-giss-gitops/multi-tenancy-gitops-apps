@@ -13,7 +13,7 @@ spec:
     helm:
       releaseName: hello-world-helm
       values: |
-        lastConfigLoaded: test
+        lastConfigLoaded: chemi
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
