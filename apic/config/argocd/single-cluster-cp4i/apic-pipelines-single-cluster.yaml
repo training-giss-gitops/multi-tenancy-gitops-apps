@@ -14,7 +14,7 @@ spec:
   source:
     path: apic/environments/single-cluster-cp4i
     repoURL: https://github.com/sepe-gitops/multi-tenancy-gitops-apps.git
-    targetRevision: test
+    targetRevision: new-version
   syncPolicy:
     automated:
       prune: true

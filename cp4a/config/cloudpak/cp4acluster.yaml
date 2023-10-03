@@ -21,5 +21,5 @@ spec:
   source:
     path: cp4a/environments/cloudpak/cp4acluster/20.2
     repoURL: https://github.com/sepe-gitops/multi-tenancy-gitops-apps.git
-    targetRevision: test
+    targetRevision: new-version
 

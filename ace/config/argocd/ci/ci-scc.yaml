@@ -17,7 +17,7 @@ spec:
   source:
     path: shared/config/ci/instances/scc
     repoURL: https://github.com/sepe-gitops/multi-tenancy-gitops-apps.git
-    targetRevision: test
+    targetRevision: new-version
   syncPolicy:
     automated:
       prune: true

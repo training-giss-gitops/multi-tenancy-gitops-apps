@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/sepe-gitops/multi-tenancy-gitops-apps.git
     path: GISS/dev/was-hello-world-simple
-    targetRevision: test
+    targetRevision: new-version
   syncPolicy:
     automated:
       prune: true
