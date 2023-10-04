@@ -16,7 +16,7 @@ spec:
     path: GISS/dev/was-hello-world-umbrella
     targetRevision: new-version
     helm:
-      valuesFiles:
+      valueFiles:
         - values/value1.yaml
         - values/value2.yaml
   syncPolicy:
