@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: "1.0"
 description: A Helm chart for WAS Liberty Hello World application
-name: was-liberty-hello-world
+name: was-liberty-hello-world-umbrella
 version: 1.0.0
 dependencies:
   - name: was-liberty-hello-world
