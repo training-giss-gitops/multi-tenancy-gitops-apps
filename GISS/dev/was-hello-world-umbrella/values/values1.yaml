@@ -1,4 +1,4 @@
 global: {}
 was-liberty-hello-world:
   lastConfigLoaded: valueFromValuesFile1
-  appName: was-liberty-hello-world-helm-umbrella
+  appName: was-liberty-hello-world-helm-umbrella-values1
