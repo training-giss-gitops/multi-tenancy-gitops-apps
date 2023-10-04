@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 # - ./was-hello-world-sources
 - ./was-hello-world-umbrella
+
+commonLabels:
+  managed-by: argoCD-jesus
