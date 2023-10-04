@@ -7,6 +7,9 @@ resources:
 - ./argoApp.yaml
 - ./configmap.yaml
 
+commonLabels:
+  managed-by: argoCD-jesus
+
 # patches:
 # - path: patch.yaml
 #   target:
