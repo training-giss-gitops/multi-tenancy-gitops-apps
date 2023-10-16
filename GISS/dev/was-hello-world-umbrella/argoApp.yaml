@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/sepe-gitops/multi-tenancy-gitops-apps.git
     path: GISS/dev/was-hello-world-umbrella
-    targetRevision: new-version
+    targetRevision: master
     helm:
       valueFiles:
         - values/values1.yaml
