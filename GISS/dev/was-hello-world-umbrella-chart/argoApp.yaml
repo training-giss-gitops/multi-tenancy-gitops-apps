@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: was-liberty-hello-world-helm
+  name: was-liberty-hello-world-umbrella-chart
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   finalizers:
@@ -13,12 +13,12 @@ spec:
   project: applications
   source:
     repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
-    path: GISS/dev/was-hello-world-umbrella
+    path: GISS/dev/was-hello-world-umbrella-chart
     targetRevision: master
     helm:
       valueFiles:
-        - values/values1.yaml
-        - values/values2.yaml
+        - values/configManager.yaml
+        - values/PyS.yaml
   syncPolicy:
     automated:
       prune: true

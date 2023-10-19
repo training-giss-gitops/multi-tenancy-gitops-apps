@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: was-liberty-hello-world-helm-simple
+  name: was-liberty-hello-world-multple-sources
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   finalizers:
@@ -17,8 +17,8 @@ spec:
       targetRevision: 5.0.0
       helm:
         valueFiles:
-          - $values/GISS/dev/was-hello-world-sources/values/values1.yaml
-          - $values/GISS/dev/was-hello-world-sources/values/values2.yaml
+          - $values/GISS/dev/was-hello-world-multiple-sources/values/configManager.yaml
+          - $values/GISS/dev/was-hello-world-multiple-sources/values/PyS.yaml
     - repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
       targetRevision: master
       ref: values
