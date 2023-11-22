@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    version: 10.5.0
+    version: 11.2.5
     name: es-starter-app
   name: es-starter-app
 spec:
@@ -10,11 +10,11 @@ spec:
   selector:
     matchLabels:
       name: es-starter-app
-      version: 10.5.0
+      version: 11.2.5
   template:
     metadata:
       labels:
-        version: 10.5.0
+        version: 11.2.5
         name: es-starter-app
     spec:
       containers:

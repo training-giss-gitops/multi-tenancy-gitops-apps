@@ -1,8 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ./was-hello-world-multiple-sources
-- ./was-hello-world-umbrella-chart
+#- ./was-hello-world-multiple-sources
+#- ./was-hello-world-umbrella-chart
+- ./event-streams-starter-app
 
 commonLabels:
   managed-by: argoCD-jesus

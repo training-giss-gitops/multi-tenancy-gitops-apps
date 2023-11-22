@@ -3,7 +3,7 @@ kind: KafkaTopic
 metadata:
   name: dev-es-starter-app
   labels:
-    eventstreams.ibm.com/cluster: dev-es-inst
+    eventstreams.ibm.com/cluster: es-default
 spec:
   partitions: 1
   replicas: 1
