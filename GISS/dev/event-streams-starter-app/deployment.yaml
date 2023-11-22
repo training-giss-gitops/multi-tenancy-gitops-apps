@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: es-demo
-          image: quay.io/ibmcase/es-demo
+          image: quay.io/almaraz/es-demo:11.2.5
           imagePullPolicy: Always
           env:
           - name: JAVA_APP_JAR
