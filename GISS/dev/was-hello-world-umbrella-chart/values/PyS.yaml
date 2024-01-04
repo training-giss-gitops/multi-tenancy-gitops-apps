@@ -1,6 +1,6 @@
 global: {}
 was-liberty-hello-world:
-  lastConfigLoaded: valueFromPySYAML
+  #lastConfigLoaded: valueFromPySYAML
   annotations:
     annotationpys1: "An annotation from PyS yaml file"
     annotationpys2: "An annotation from PyS yaml file"
