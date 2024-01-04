@@ -5,5 +5,5 @@ name: was-liberty-hello-world-umbrella
 version: 1.0.0
 dependencies:
   - name: was-liberty-hello-world
-    version: 5.0.0
+    version: 8.0.0
     repository: https://jesusmah.github.io/helm-chart-repo

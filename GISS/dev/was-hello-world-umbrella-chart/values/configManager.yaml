@@ -1,4 +1,7 @@
 global: {}
 was-liberty-hello-world:
-  lastConfigLoaded: valueFromValuesFile1
-  appName: was-liberty-hello-world-helm-umbrella-values1
+  lastConfigLoaded: valueFromConfigManagerYAML
+  appName: was-liberty-hello-world-helm-umbrella-chart
+  annotations:
+    annotationcm1: "An annotation from ConfigManager yaml file"
+    annotationcm2: "An annotation from ConfigManager yaml file"
