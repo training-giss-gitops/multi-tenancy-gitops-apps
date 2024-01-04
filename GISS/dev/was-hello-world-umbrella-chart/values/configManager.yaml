@@ -5,3 +5,4 @@ was-liberty-hello-world:
   annotations:
     annotationcm1: "An annotation from ConfigManager yaml file"
     annotationcm2: "An annotation from ConfigManager yaml file"
+    annotationcm3: "An annotation from ConfigManager yaml file"
