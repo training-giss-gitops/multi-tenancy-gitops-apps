@@ -1,6 +1,6 @@
 global: {}
 was-liberty-hello-world:
-  lastConfigLoaded: valueFromConfigManagerYAML
+  lastConfigLoaded: valueFromConfigManagerYAML-test
   appName: was-liberty-hello-world-helm-umbrella-chart
   annotations:
     annotationcm1: "An annotation from ConfigManager yaml file"
