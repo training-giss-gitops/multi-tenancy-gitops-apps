@@ -17,13 +17,11 @@ spec:
       targetRevision: 1.0.0
       helm:
         valueFiles:
-          - values/configManager.yaml
-          - values/PyS.yaml
-          # - $values/GISS/dev/was-hello-world-multiple-sources/values/configManager.yaml
-          # - $values/GISS/dev/was-hello-world-multiple-sources/values/PyS.yaml
-    # - repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
-    #   targetRevision: master
-    #   ref: values
+          - $values/GISS/dev/was-hello-world-multiple-sources/values/configManager.yaml
+          - $values/GISS/dev/was-hello-world-multiple-sources/values/PyS.yaml
+    - repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
+      targetRevision: master
+      ref: values
   syncPolicy:
     automated:
       prune: true
