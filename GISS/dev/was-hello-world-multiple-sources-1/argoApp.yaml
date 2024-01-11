@@ -19,9 +19,13 @@ spec:
         valueFiles:
           - $values/GISS/dev/was-hello-world-multiple-sources-1/values/configManager.yaml
           - $values/GISS/dev/was-hello-world-multiple-sources-1/values/PyS.yaml
+          - $pys/values.yaml
     - repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
       targetRevision: master
       ref: values
+    - repoURL: https://github.com/giss-gitops/produccion-y-sistemas.git
+      targetRevision: master
+      ref: pys
   syncPolicy:
     automated:
       prune: true
