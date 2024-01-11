@@ -1,5 +1,5 @@
 global: {}
 liberty-hello-world:
   appName: liberty-hello-world-helm-umbrella-chart-2
-  env1: value-from-configManager
-  env2: value-from-configManager
+  env1: value-from-configManager-yaml
+  env2: value-from-configManager-yaml
