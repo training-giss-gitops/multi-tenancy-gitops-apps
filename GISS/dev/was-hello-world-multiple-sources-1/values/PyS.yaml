@@ -1,1 +1,4 @@
-lastConfigLoaded: valueFromValuesFile2-new
+global: {}
+liberty-hello-world:
+  env1: value-from-PyS
+  #env2: value-from-PyS
