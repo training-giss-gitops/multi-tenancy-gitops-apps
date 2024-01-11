@@ -1,0 +1,9 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for WAS Liberty Hello World application
+name: liberty-hello-world-umbrella
+version: 1.0.0
+dependencies:
+  - name: liberty-hello-world
+    version: 1.0.0
+    repository: https://jesusmah.github.io/helm-chart-repo

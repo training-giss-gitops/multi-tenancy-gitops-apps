@@ -1,7 +1,0 @@
-global: {}
-was-liberty-hello-world:
-  lastConfigLoaded: valueFromPySYAML
-  inventedValue: test
-  annotations:
-    annotationpys1: "An annotation from PyS yaml file"
-    annotationpys2: "An annotation from PyS yaml file"

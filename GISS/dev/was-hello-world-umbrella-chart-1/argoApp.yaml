@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: was-liberty-hello-world-umbrella-chart
+  name: liberty-hello-world-umbrella-chart
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   finalizers:
@@ -13,7 +13,7 @@ spec:
   project: applications
   source:
     repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
-    path: GISS/dev/was-hello-world-umbrella-chart
+    path: GISS/dev/was-hello-world-umbrella-chart-1
     targetRevision: master
     helm:
       valueFiles:
