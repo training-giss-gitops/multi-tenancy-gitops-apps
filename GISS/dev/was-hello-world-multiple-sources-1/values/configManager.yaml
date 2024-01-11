@@ -1,5 +1,3 @@
-global: {}
-liberty-hello-world:
-  appName: liberty-hello-world-helm-multiple-sources-1
-  env1: value-from-configManager
-  env2: value-from-configManager
+appName: liberty-hello-world-helm-multiple-sources-1
+env1: value-from-configManager
+env2: value-from-configManager
