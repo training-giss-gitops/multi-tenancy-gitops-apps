@@ -4,4 +4,4 @@ metadata:
   name: multiple-sources
   namespace: dev
 data:
-  install-config: "test"
+  oneProperty: "test-1"

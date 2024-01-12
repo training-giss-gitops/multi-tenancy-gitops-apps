@@ -4,6 +4,7 @@ resources:
 - ./was-hello-world-umbrella-chart-1
 - ./was-hello-world-umbrella-chart-2
 - ./was-hello-world-multiple-sources-1
+- ./was-hello-world-multiple-sources-2
 - ./event-streams-starter-app
 
 commonLabels:
