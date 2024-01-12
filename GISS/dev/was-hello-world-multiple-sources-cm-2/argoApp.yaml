@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: liberty-hello-world-multiple-sources-cm
+  annotations:
+    argocd.argoproj.io/sync-wave: "300"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: dev
+    server: https://kubernetes.default.svc
+  project: applications
+  sources:
+    - chart: liberty-hello-world-cm-det
+      repoURL: https://jesusmah.github.io/helm-chart-repo
+      targetRevision: 1.0.0
+      helm:
+        valueFiles:
+          - $values/GISS/dev/was-hello-world-multiple-sources-cm-2/values/configManager.yaml
+          - $values/GISS/dev/was-hello-world-multiple-sources-cm-2/values/PyS.yaml
+          - $pys/values.yaml
+    - repoURL: https://github.com/giss-gitops/multi-tenancy-gitops-apps.git
+      targetRevision: master
+      ref: values
+    - repoURL: https://github.com/giss-gitops/produccion-y-sistemas.git
+      targetRevision: main
+      ref: pys
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

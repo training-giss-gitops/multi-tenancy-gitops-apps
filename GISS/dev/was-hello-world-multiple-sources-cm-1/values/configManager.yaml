@@ -1,0 +1,3 @@
+appName: liberty-hello-world-helm-multiple-sources-cm-1
+env1: value-from-configManager
+env2: value-from-configManager

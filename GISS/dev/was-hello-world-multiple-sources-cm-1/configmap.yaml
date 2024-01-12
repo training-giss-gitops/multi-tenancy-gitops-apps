@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: multiple-sources-cm
+  namespace: dev
+data:
+  oneProperty: "test-1"
