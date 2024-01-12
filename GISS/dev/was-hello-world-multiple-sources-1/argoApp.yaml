@@ -24,7 +24,7 @@ spec:
       targetRevision: master
       ref: values
     - repoURL: https://github.com/giss-gitops/produccion-y-sistemas.git
-      targetRevision: master
+      targetRevision: main
       ref: pys
   syncPolicy:
     automated:
