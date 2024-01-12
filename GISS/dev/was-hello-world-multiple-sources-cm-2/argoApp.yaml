@@ -14,7 +14,7 @@ spec:
   sources:
     - chart: liberty-hello-world-cm-det
       repoURL: https://jesusmah.github.io/helm-chart-repo
-      targetRevision: 1.0.0
+      targetRevision: 2.0.0
       helm:
         valueFiles:
           - $values/GISS/dev/was-hello-world-multiple-sources-cm-2/values/configManager.yaml
